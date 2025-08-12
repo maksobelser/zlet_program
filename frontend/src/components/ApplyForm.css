@@ -1,0 +1,100 @@
+.apply-form-container {
+  width: 100%;
+}
+
+/* center the stepper tightly */
+.stepper {
+  width: fit-content;
+  margin: 0 auto 24px;
+}
+
+.step {
+  cursor: pointer;
+  min-width: 60px;
+}
+
+.step .MuiStepLabel-label {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.apply-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.selected-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0;
+}
+
+@media (max-width: 1200px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.apply-form__next {
+  padding: 12px 24px;
+  font-size: 1.2em;
+  border: none;
+  background-color: #2860ae;
+  color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+
+.apply-form__next:hover {
+  background-color: #1a4177;
+}
+
+/* -------------------------------------------------------------------
+   NAV CARD (match SelectableCard look & feel)
+   ------------------------------------------------------------------- */
+
+.nav-card {
+  background-color: rgba(243, 234, 229, 0.96);
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 8px auto 24px;
+  padding: 23px;
+  max-width: 380px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s, background-color 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-card:hover {
+  border-color: #888;
+  box-shadow: 0px 2px 28px rgba(217, 145, 107, 0.402);
+}
+
+/* we can drop extra padding here since .nav-card already has it */
+.nav-card__content {
+  padding: 0;
+}

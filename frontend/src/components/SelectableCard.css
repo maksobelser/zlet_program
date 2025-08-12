@@ -1,0 +1,66 @@
+/* frontend/src/components/SelectableCard.css */
+
+.selectable-card {
+  background-color: rgba(243, 234, 229, 0.96);
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin: 8px;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color 0.2s, background-color 0.2s, box-shadow 0.2s;
+}
+
+.selectable-card:hover {
+  border-color: #888;
+  box-shadow: 0px 2px 28px rgba(217, 145, 107, 0.402);
+}
+
+.selectable-card.selected {
+  background-color: rgba(192, 216, 230, 0.96);
+  border-color: #2860ae;
+}
+
+.selectable-card__title {
+  margin: 0 0 8px 0;
+  font-size: 1.20em;
+}
+
+.selectable-card__subtitle {
+  margin: 4px 0 8px;
+  font-size: 1em;
+  color: #444;
+  font-weight: 500;
+}
+
+.selectable-card__description {
+  margin: 0 0 8px 0;
+  font-size: 0.9em;
+  color: #555;
+
+  white-space: pre-line;      /* collapse spaces but honor newlines */
+  /* or use pre-wrap to also preserve multiple spaces:
+     white-space: pre-wrap; */
+}
+
+.selectable-card__transport {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.9em;
+  text-decoration: underline;
+}
+
+.selectable-card__free {
+  align-self: flex-start;
+  margin-bottom: 0;
+  font-size: 0.97em;
+  color: #7a5134;
+  font-weight: 600;
+  margin-top: 12px;
+  letter-spacing: 0.5px;
+}
