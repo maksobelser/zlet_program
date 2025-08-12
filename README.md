@@ -4,9 +4,9 @@ This is a web application built to manage workshop selection and content display
 It served approximately 800 users and provided tailored interfaces based on user roles — ensuring that participants, leaders and program leads all had the tools they needed.
 
 ✨ Features
-	•	Role-based views for participants, leaders, and program leads.
-	•	Workshop selection system for smooth scheduling.
-	•	Dynamic content display to match user permissions and needs.
+- Role-based views for participants, leaders, and program leads.
+- Workshop selection system for smooth scheduling.
+- Dynamic content display to match user permissions and needs.
 
 📜 Background
 
