@@ -1,5 +1,3 @@
-## Zlet App
-
 This is a web application built to manage workshop selection and content display during the National Scout Jamboree in Slovenia.
 It served approximately 800 users and provided tailored interfaces based on user roles — ensuring that participants, leaders and program leads all had the tools they needed.
 
